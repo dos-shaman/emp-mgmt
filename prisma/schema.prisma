@@ -1,0 +1,24 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+    provider = "prisma-client-js"
+    // Remove the deprecated "jsonProtocol" preview feature
+    // previewFeatures = ["jsonProtocol"]
+}
+
+datasource db {
+    provider = "postgresql"
+    url      = env("DATABASE_URL")
+}
+
+//User with an id, name and email as strings
+model User {
+    id    Int @id @default(autoincrement())
+    rollno BigInt
+    name  String
+    email String
+    department String
+    dateOfBirth DateTime
+    gpa Float
+}
