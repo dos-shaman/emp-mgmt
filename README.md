@@ -1,5 +1,2 @@
-# Create T3 App
+# Employee Management System - T3
 
-Check the video:
-
-https://youtu.be/Gf9RkaHnsR8
